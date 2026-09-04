@@ -211,6 +211,7 @@ footer .fine{margin-top:50px;color:var(--ink-dim);font-size:0.8rem;}
       <a href="#impact">Impact</a>
       <a href="#cases">Case Studies</a>
       <a href="#hike">Hike</a>
+      <a href="#zepto">Zepto</a>
       <a href="#skills">Skills</a>
       <a href="#contact">Contact</a>
     </div>
@@ -383,6 +384,14 @@ footer .fine{margin-top:50px;color:var(--ink-dim);font-size:0.8rem;}
         <p>Hackathon submission: full PM journey from live user research to a launch-ready strategy for relaunching Hike.</p>
         <div class="role"><b>Role:</b> Solo entrant, Hike Relaunch Hackathon</div>
         <div class="role"><b>Highlights:</b> 58 live WhatsApp reviews clustered into 9 friction themes, an opportunity solution tree, RICE-scored feature and vertical selection, a full PRD, 3-phase roadmap, AARRR funnel, and GTM plan.</div>
+        <span class="arrow">Read case study →</span>
+      </a>
+      <a class="feat-card" href="#zepto">
+        <div class="icon-lg">🛵</div>
+        <h3>Why I Stopped Using Zepto</h3>
+        <p>Self-directed product teardown: turning a personal frustration into a structured Voice-of-Customer analysis and fix.</p>
+        <div class="role"><b>Role:</b> Independent analysis, published on LinkedIn</div>
+        <div class="role"><b>Highlights:</b> Analyzed real Google Play reviews, found support was the #1 complaint theme (262 mentions), and proposed three low-effort, high-trust fixes using RICE and Kano.</div>
         <span class="arrow">Read case study →</span>
       </a>
     </div>
@@ -564,6 +573,69 @@ footer .fine{margin-top:50px;color:var(--ink-dim);font-size:0.8rem;}
         <a href="Hike_PM_Journey_Srabanti_Ghosh.pdf" target="_blank" rel="noopener" style="color:var(--coral);font-weight:600;">Full Strategy Document (PDF) ↗</a>
         <a href="hike-letter-writer.html" target="_blank" rel="noopener" style="color:var(--mint);font-weight:600;">Companion Visual Brief: "The Letter Writer" ↗</a>
       </p>
+    </div>
+  </div>
+</section>
+
+<section id="zepto">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="section-tag">// CASE STUDY 04 — SELF-DIRECTED TEARDOWN</div>
+      <h2>Why I stopped using Zepto</h2>
+    </div>
+
+    <div class="case">
+      <span class="case-tag exercise">Independent analysis</span>
+      <h3>Turning a personal frustration into a Voice-of-Customer teardown</h3>
+      <div class="role">Role: Independent analysis, published on LinkedIn</div>
+
+      <div class="disclosure">This wasn't client or employer work — it started as a personal observation about a quick-commerce app I stopped using, which I then turned into a structured analysis of public Google Play reviews to see whether my experience was representative. Frequencies and priority calls below are my own qualitative read of that review set, not Zepto's internal data.</div>
+
+      <div class="star-block">
+        <div class="k">THE TRIGGER</div>
+        <p>I stopped opening Zepto — not because of one bad order, but a pattern: support that went in circles, delivery that didn't match what the app promised, cancellation issues, and no clear way to reach a human. As a PM, I couldn't just walk away from it without asking what was actually broken.</p>
+      </div>
+
+      <div class="star-block">
+        <div class="k">THE ANALYSIS</div>
+        <p>I went through Zepto's Google Play reviews to check if my experience was an outlier. It wasn't. I clustered the reviews into eight recurring pain-point themes and sized each by frequency and business impact:</p>
+      </div>
+
+      <div class="table-wrap" style="margin-bottom:26px;">
+        <table>
+          <tr><th>Pain point</th><th>Mentions</th><th>Impact</th></tr>
+          <tr><td>Customer Support</td><td>262</td><td>High</td></tr>
+          <tr><td>App Bugs &amp; UX</td><td>148</td><td>Medium</td></tr>
+          <tr><td>Refund &amp; Cancellation</td><td>84</td><td>High</td></tr>
+          <tr><td>Delivery Delay</td><td>52</td><td>High</td></tr>
+          <tr><td>Missing / Wrong Items</td><td>42</td><td>High</td></tr>
+          <tr><td>Product Quality</td><td>34</td><td>Medium–High</td></tr>
+          <tr><td>Pricing &amp; Charges</td><td>21</td><td>Medium</td></tr>
+          <tr><td>Inventory / Stock</td><td>13</td><td>Medium</td></tr>
+        </table>
+      </div>
+
+      <div class="star-block">
+        <div class="k">THE REFRAME</div>
+        <p>The common take is "AI support is broken." I disagreed — the AI (Zepto's Zap chat assistant) wasn't the real problem. The product was missing <strong>guardrails</strong> around the AI: no clear escalation path, no real-time-aware cancellation logic, and no honest, specific status messaging when something went wrong.</p>
+      </div>
+
+      <div class="star-block">
+        <div class="k">WHAT I'D CHANGE</div>
+        <ul>
+          <li><strong>Escalate on repetition or frustration:</strong> if the same issue repeats twice, or the customer's language signals frustration, route to a human — a simple rule, no sentiment model required.</li>
+          <li><strong>Distance-aware cancellation:</strong> base cancellation eligibility on real-time order distance — self-cancel with instant refund when far from the doorstep, refuse-at-doorstep with automatic refund when near.</li>
+          <li><strong>Honest status messaging:</strong> replace generic delay responses with specifics — "Your order is delayed. Current ETA: 18 minutes." Trust improves when the product tells the truth, not when it apologizes vaguely.</li>
+        </ul>
+      </div>
+
+      <details>
+        <summary>Why support, not delivery speed — the RICE and Kano reasoning</summary>
+        <div class="challenge"><div class="c-title">RICE: high reach, high trust impact, low effort</div><div class="c-body">Fixing support is primarily product rules and experience changes, not infrastructure. Compare that to improving raw delivery speed, which requires real investment in dark-store density, rider supply, and operations — a much higher-effort lever for a similar trust payoff.</div></div>
+        <div class="challenge"><div class="c-title">Kano: support is a Basic / must-be need</div><div class="c-body">Users don't expect magical AI from a grocery app. They expect that when something goes wrong, the product helps them fix it. Failing a "must-be" need does more damage to trust than any delighter could offset.</div></div>
+      </details>
+
+      <div class="reflection">I didn't stop using Zepto because the product idea was bad — I stopped because the basics weren't holding up. Sometimes the biggest product opportunity isn't adding more AI. It's adding better product discipline around the AI you already have.</div>
     </div>
   </div>
 </section>
